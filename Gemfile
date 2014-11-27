@@ -1,7 +1,8 @@
 source 'http://ruby.taobao.org'
 
-
 gem 'rails', '4.1.7'
+
+gem 'pg'
 
 gem 'casino'
 
@@ -18,3 +19,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 gem 'spring', group: :development
+
+gem 'pbl_service_client', git: 'git@124.202.141.250:pbl/pbl_service_client.git', branch: 'master'
+
+group :development do
+  gem 'thin'
+end
