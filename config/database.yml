@@ -25,3 +25,9 @@ production:
   database: pbl_sso_production
   username: pbl
   password: pbl
+
+staging:
+  <<: *default
+  database: pbl_sso_staging
+  username: pbl
+  password: pbl
