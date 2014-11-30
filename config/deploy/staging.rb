@@ -6,9 +6,9 @@ set :puma_env, 'staging'
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{deploy@192.168.10.99}
-role :web, %w{deploy@192.168.10.99}
-role :db,  %w{deploy@192.168.10.99}
+role :app, %w{deploy@172.172.172.120}
+role :web, %w{deploy@172.172.172.120}
+role :db,  %w{deploy@172.172.172.120}
 
 
 # Extended Server Syntax
@@ -17,7 +17,7 @@ role :db,  %w{deploy@192.168.10.99}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server '192.168.10.99', user: 'deploy', roles: %w{web app}
+server '172.172.172.120', user: 'deploy', roles: %w{web app}
 
 
 # Custom SSH Options
