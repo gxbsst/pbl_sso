@@ -2,7 +2,9 @@ source 'http://ruby.taobao.org'
 
 gem 'rails', '4.1.7'
 
-gem 'pg'
+gem 'pg', platform: :ruby
+
+gem 'activerecord-jdbcpostgresql-adapter', platforms: [:jruby]
 
 gem 'casino'
 
@@ -24,4 +26,10 @@ gem 'pbl_service_client', git: 'git@124.202.141.250:pbl/pbl_service_client.git',
 
 group :development do
   gem 'thin'
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler'
+  gem 'capistrano-sidekiq'
 end

@@ -23,3 +23,5 @@ test:
 production:
   <<: *default
   database: pbl_sso_production
+  username: pbl
+  password: pbl
