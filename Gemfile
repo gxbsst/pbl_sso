@@ -1,7 +1,6 @@
 source 'http://ruby.taobao.org'
 
 
-
 gem 'rails', '4.1.7'
 
 gem 'pg', platform: :ruby
@@ -39,3 +38,5 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-sidekiq'
 end
+
+gem 'puma', platforms: :jruby
