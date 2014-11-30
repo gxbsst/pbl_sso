@@ -31,7 +31,7 @@ gem 'spring', group: :development
 gem 'pbl_service_client', git: 'git@124.202.141.250:pbl/pbl_service_client.git', branch: 'master'
 
 group :development do
-  gem 'thin'
+  gem 'thin', platform: :ruby
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano3-puma'
