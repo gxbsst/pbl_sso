@@ -1,5 +1,7 @@
 source 'http://ruby.taobao.org'
 
+
+
 gem 'rails', '4.1.7'
 
 gem 'pg', platform: :ruby
@@ -20,7 +22,9 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 
-gem 'therubyracer'
+gem 'therubyracer', platforms: :ruby
+
+gem 'therubyrhino', platforms: :jruby
 
 gem 'spring', group: :development
 
