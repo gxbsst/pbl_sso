@@ -1,4 +1,3 @@
-set :puma_env, 'staging'
 
 # Simple Role Syntax
 # ==================

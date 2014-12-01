@@ -1,8 +1,10 @@
 # config valid only for Capistrano 3.1
-lock '3.2.1'
+lock '3.3.3'
 
 set :application, 'pbl_sso'
 set :repo_url, 'git@124.202.141.250:pbl/pbl_sso.git'
+
+set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call

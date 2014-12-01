@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.pbl_service_client.base_url = 'http://172.172.172.120:3001'
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
