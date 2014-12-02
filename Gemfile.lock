@@ -1,6 +1,6 @@
 GIT
   remote: git@124.202.141.250:pbl/pbl_service_client.git
-  revision: 41b79074d73dd9d8f00a6363e24703bcc61a7c67
+  revision: daee94ffdd0bd243602912788ef09b6228a8dfec
   branch: master
   specs:
     pbl_service_client (0.0.1)
@@ -161,6 +161,7 @@ GEM
     redis-namespace (1.5.1)
       redis (~> 3.0, >= 3.0.4)
     ref (1.0.5)
+    require_reloader (0.2.0)
     rotp (2.0.0)
     sass (3.2.19)
     sass-rails (4.0.5)
@@ -242,6 +243,7 @@ DEPENDENCIES
   pg
   puma
   rails (= 4.1.7)
+  require_reloader
   sass-rails (~> 4.0.3)
   spring
   therubyracer

@@ -33,6 +33,7 @@ gem 'pbl_service_client', git: 'git@124.202.141.250:pbl/pbl_service_client.git',
 
 group :development do
   gem 'thin', platform: :ruby
+  gem 'require_reloader'
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano3-puma'
