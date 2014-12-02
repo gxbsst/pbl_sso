@@ -27,6 +27,8 @@ gem 'therubyrhino', platforms: :jruby
 
 gem 'spring', group: :development
 
+gem 'figaro'
+
 gem 'pbl_service_client', git: 'git@124.202.141.250:pbl/pbl_service_client.git', branch: 'master'
 
 group :development do

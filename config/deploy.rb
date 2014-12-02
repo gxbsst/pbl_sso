@@ -2,6 +2,7 @@
 lock '3.3.3'
 
 set :application, 'pbl_sso'
+
 set :repo_url, 'git@124.202.141.250:pbl/pbl_sso.git'
 
 # Default branch is :master
@@ -23,10 +24,10 @@ set :deploy_to, '/var/www/pbl_sso'
 set :pty, true
 
 # Default value for :linked_files is []
-# set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/application.yml}
 
 # Default value for linked_dirs is []
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }

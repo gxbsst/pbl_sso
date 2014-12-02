@@ -106,6 +106,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.6)
     ffi (1.9.6-java)
+    figaro (1.0.0)
+      thor (~> 0.14)
     hike (1.2.3)
     hitimes (1.2.2)
     hitimes (1.2.2-java)
@@ -233,6 +235,7 @@ DEPENDENCIES
   capistrano3-puma
   casino
   coffee-rails (~> 4.0.0)
+  figaro
   jbuilder (~> 2.0)
   jquery-rails
   pbl_service_client!
