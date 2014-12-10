@@ -9,6 +9,8 @@ gem 'activerecord-jdbcpostgresql-adapter', platforms: [:jruby]
 
 gem 'devise'
 
+gem 'devise_cas_authenticatable'
+
 gem 'casino'
 
 gem 'sass-rails', '~> 4.0.3'
