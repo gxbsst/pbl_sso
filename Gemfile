@@ -7,6 +7,8 @@ gem 'pg', platform: :ruby
 
 gem 'activerecord-jdbcpostgresql-adapter', platforms: [:jruby]
 
+gem 'devise'
+
 gem 'casino'
 
 gem 'sass-rails', '~> 4.0.3'
