@@ -1,9 +1,9 @@
 GIT
   remote: git@124.202.141.250:pbl/pbl_service_client.git
-  revision: 155f99c22d5350026b51772a76c6519d2acb4764
+  revision: 7f8bab6572de543246146aae238c7b4b964cc542
   branch: master
   specs:
-    pbl_service_client (0.0.2)
+    pbl_service_client (0.0.5)
       activemodel
       addressable
       typhoeus
@@ -50,6 +50,7 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     bcrypt (3.1.9)
+    bcrypt (3.1.9-java)
     builder (3.2.2)
     capistrano (3.3.3)
       capistrano-stats (~> 1.0.3)
@@ -138,7 +139,7 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
-    minitest (5.4.3)
+    minitest (5.5.0)
     multi_json (1.10.1)
     multipart-post (2.0.0)
     net-scp (1.2.1)
