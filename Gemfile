@@ -7,6 +7,10 @@ gem 'pg', platform: :ruby
 
 gem 'activerecord-jdbcpostgresql-adapter', platforms: [:jruby]
 
+gem 'devise'
+
+gem 'devise_cas_authenticatable'
+
 gem 'casino'
 
 gem 'sass-rails', '~> 4.0.3'
@@ -28,6 +32,8 @@ gem 'therubyrhino', platforms: :jruby
 gem 'spring', group: :development
 
 gem 'figaro'
+
+gem 'newrelic_rpm'
 
 gem 'pbl_service_client', git: 'git@124.202.141.250:pbl/pbl_service_client.git', branch: 'master'
 
