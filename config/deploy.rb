@@ -3,7 +3,7 @@ lock '3.3.3'
 
 set :application, 'pbl_sso'
 
-set :repo_url, 'git@172.172.172.62:pbl/pbl_sso.git'
+set :repo_url, 'git@58.246.127.90:pbl/pbl_sso.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
