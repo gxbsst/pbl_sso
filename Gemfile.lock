@@ -1,9 +1,9 @@
 GIT
-  remote: git@124.202.141.250:pbl/pbl_service_client.git
-  revision: 7f8bab6572de543246146aae238c7b4b964cc542
+  remote: git@58.246.127.90:pbl/pbl_service_client.git
+  revision: f1c33d889a1a4b3ee345cd78708dce41947f7fa8
   branch: master
   specs:
-    pbl_service_client (0.0.5)
+    pbl_service_client (0.0.18)
       activemodel
       addressable
       typhoeus
@@ -110,7 +110,7 @@ GEM
       rubycas-client (>= 2.2.1)
     equalizer (0.0.9)
     erubis (2.7.0)
-    ethon (0.7.1)
+    ethon (0.7.2)
       ffi (>= 1.3.0)
     eventmachine (1.0.3)
     execjs (2.2.2)
@@ -225,7 +225,7 @@ GEM
       hitimes
     turbolinks (2.5.2)
       coffee-rails
-    typhoeus (0.6.9)
+    typhoeus (0.7.0)
       ethon (>= 0.7.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -233,7 +233,7 @@ GEM
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     useragent (0.10.0)
-    virtus (1.0.3)
+    virtus (1.0.4)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
