@@ -1,4 +1,5 @@
 source 'http://ruby.taobao.org'
+source 'https://rails-assets.org'
 
 
 gem 'rails', '4.1.7'
@@ -37,6 +38,8 @@ gem 'newrelic_rpm'
 
 # gem 'pbl_service_client', git: 'git@124.202.141.250:pbl/pbl_service_client.git', branch: 'master'
 gem 'pbl_service_client', git: 'git@58.246.127.90:pbl/pbl_service_client.git', branch: 'master'
+
+gem 'rails-assets-js-base64'
 
 group :development do
   gem 'thin', platform: :ruby
