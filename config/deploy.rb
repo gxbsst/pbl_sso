@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.3.3'
+lock '3.3.5'
 
 set :application, 'pbl_sso'
 
@@ -9,7 +9,7 @@ set :repo_url, 'git@58.246.127.90:pbl/pbl_sso.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/var/www/pbl_sso'
+set :deploy_to, '/home/deployer/pbl_sso'
 
 # Default value for :scm is :git
 # set :scm, :git
