@@ -1,17 +1,23 @@
-<div class="form">
-  <%= form_tag(login_path, method: :post, id: 'login-form') do %>
-      <%= hidden_field_tag :lt, @login_ticket.ticket %>
-      <%= hidden_field_tag :service, params[:service] unless params[:service].nil? %>
-      <%= label_tag :username, t('login.label_username') %>
-      <%= text_field_tag :username, params[:username], autofocus: true %>
-      <%= label_tag :password, t('login.label_password') %>
-      <%= password_field_tag :password %>
-      <%= label_tag :rememberMe do %>
-          <%= check_box_tag :rememberMe, 1, params[:rememberMe] %> <%= t('login.label_remember_me') %>
-      <% end %>
-      <%= button_tag t('login.label_button'), :class => 'button' %>
-  <% end %>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PblSso</title>
+  <%= javascript_include_tag 'sso' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= form_tag(login_path, method: :post, id: 'login-form') do %>
+    <%= hidden_field_tag :lt, @login_ticket.ticket %>
+    <%= hidden_field_tag :service, params[:service] unless params[:service].nil? %>
+    <%= label_tag :username, t('login.label_username') %>
+    <%= text_field_tag :username, params[:username], autofocus: true %>
+    <%= label_tag :password, t('login.label_password') %>
+    <%= password_field_tag :password %>
+    <%= label_tag :rememberMe do %>
+        <%= check_box_tag :rememberMe, 1, params[:rememberMe] %> <%= t('login.label_remember_me') %>
+    <% end %>
+    <%= button_tag t('login.label_button'), :class => 'button' %>
+<% end %>
 <script type="text/javascript" charset="utf-8">
     String.prototype.query = function (name) {
         var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)'),
@@ -23,12 +29,14 @@
     };
     $().ready(function () {
         var query = window.location.search.substr(1),
-            code = query.query('q'),
-            decode = Base64.decode(code),
-            username = decode.query('username'),
-            password = decode.query('password');
+                code = query.query('q'),
+                decode = Base64.decode(code),
+                username = decode.query('username'),
+                password = decode.query('password');
         $('#username').val(username);
         $('#password').val(password);
         $('form').submit();
     });
 </script>
+</body>
+</html>
