@@ -41,3 +41,10 @@ staging:
     pbl:
       authenticator: "pbl"
       options:
+
+release:
+  <<: *defaults
+  authenticators:
+    pbl:
+      authenticator: "pbl"
+      options:
