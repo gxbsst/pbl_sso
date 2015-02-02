@@ -22,3 +22,10 @@ staging:
   database: pbl_sso_staging
   username: pbl
   password: pbl
+
+release:
+  <<: *default
+  database: pbl_sso_release
+  username: pbl
+  password: pbl
+

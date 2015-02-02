@@ -11,4 +11,10 @@
 
 $font: 'Arial';
 
+$logo: "logo_zh-cn_2x.png";
+
 @import 'casino';
+
+.logo {
+  background-size: 220px;
+}

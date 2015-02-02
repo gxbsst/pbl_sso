@@ -9,7 +9,7 @@ defaults: &defaults
     lifetime_consumed: 86400
   frontend:
     sso_name: "Pbl"
-    footer_text: "Project Based Learning"
+    footer_text: "北京欧亚融信信息技术有限公司"
 
 development:
   <<: *defaults
