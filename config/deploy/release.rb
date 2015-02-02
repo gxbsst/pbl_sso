@@ -1,4 +1,6 @@
+set :stage, :release
 
+set :rails_env, 'release'
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary server in each group
@@ -54,3 +56,4 @@ server '10.10.31.109',
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+ fetch(:default_env).merge!(rails_env: 'release', jruby_opts: '"-J-Xmx4096m --1.9"')
