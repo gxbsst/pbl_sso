@@ -18,13 +18,13 @@ zh-CN:
     submit: "Continue"
     invalid_otp: "The one-time password you entered is not correct."
   logout:
-    title: "Bye."
-    logged_out_without_url: "You have successfully logged out."
+    title: "再见."
+    logged_out_without_url: "你已经成功登出."
     logged_out_with_url: "The application you just logged out of has provided a link it would like you to follow:"
   sessions:
-    title: "Hello!"
-    currently_logged_in_as: "You are currently logged in as <strong>%{username}</strong>."
-    label_logout_button: "Logout"
+    title: "您好!"
+    currently_logged_in_as: "<strong>%{username}</strong>."
+    label_logout_button: "登出"
     your_active_sessions: "Your Active Sessions"
     table:
       column_browser: "Browser"
